@@ -6,15 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script> <!-- Verknüpfung der externen JS-Datei -->
 </head>
 
 <body>
     <div class="page-container">
         <header>
             <img class="header" src="media/header.webp" alt="standort-tracking">
-            <!--<div class="logo">
-                <img src="media/black-currant-logo.png" alt="black-currant-logo">
-            </div> -->
         </header>
 
         <div class="box-divider"></div>
@@ -27,8 +25,8 @@
                 </div>
                 <div class="grid-item text">
                     <h2>Willkommen bei der BlackCurrant GmbH</h2>
-                    <p>Die BlackCurrant GmbH freut sich, ein innovatives Standort-Tracking-System zu präsentieren, das die Effizienz und Transparenz innerhalb des Unternehmens erheblich verbessert. Mit diesem System können Mitarbeiterinnen schnell und einfach herausfinden, wo sich Kolleginnen auf dem Firmengelände aufhalten. Dies trägt nicht nur zur besseren Kommunikation bei, sondern fördert auch die Zusammenarbeit und sorgt für ein optimiertes Arbeitsumfeld.</p>
-                    <a href="team.html">Unser Team &gt;</a>
+                    <p id="text">Die BlackCurrant GmbH freut sich, ein innovatives Standort-Tracking-System zu präsentieren.</p>
+                    <button id="changeTextButton">Text ändern durch Klick</button>
                 </div>
             </div>
         </section>
@@ -37,17 +35,17 @@
         
         <section class="background-dark">
             <h3 class="center">Unser neues Ortungssystem:</h3>
-            <p class="center">Das neue Ortungssystem von BlackCurrant bietet einen umfassenden Überblick über das gesamte Firmengelände. Es ermöglicht eine schnelle und einfache Navigation durch die verschiedenen Bereiche. Mitarbeiter*innen können jederzeit sehen, wer sich wo befindet. Dies verbessert die interne Kommunikation und sorgt für eine höhere Effizienz in der Zusammenarbeit. Das System ist einfach zu bedienen und bietet einen klaren Mehrwert für den Arbeitsalltag.</p>
+            <p class="center">Das neue Ortungssystem bietet einen umfassenden Überblick über das gesamte Firmengelände.</p>
+            
             <div class="grid-container grid-2-1">
                 <div class="grid-item text">
                     <h4>Erkunden Sie das Firmengelände:</h4>
-                    <p>Unser Ortungssystem schützt die Privatsphäre und zeigt nur relevante Standortinformationen an. Damit stellen wir sicher, dass alle Mitarbeiter*innen problemlos die gewünschten Informationen erhalten und gleichzeitig den Datenschutz respektieren. Navigieren Sie durch das Gelände und finden Sie schnell die richtigen Standorte. Unser System ist intuitiv und sorgt für eine reibungslose Nutzung im täglichen Arbeitsablauf.</p>
-                    <a href = "standort.html">Zu den Standorten &gt;</a>
+                    <p id="hoverText">Bewege die Maus über das Bild, um den Text zu ändern.</p>
                 </div>
-                <div class="grid-item image">
+                <div class="grid-item image" id="hoverDiv">
                     <img src="media/tracking-map-2.webp" alt="tracking-map-2" class="small-picture">
                 </div>
-            </div>            
+            </div>
         </section>
 
         <div class="box-divider"></div>
@@ -56,16 +54,24 @@
             <h3 class="center">Vorteile des Standort-Tracking-Systems:</h3>
             <div class="grid-container">
                 <div class="grid-item text solo">
-                    <h4 class="center">Effiziente Kommunikation:</h4>
-                    <p class="center">Das Standort-Tracking-System von BlackCurrant ermöglicht eine effiziente Kommunikation zwischen den Mitarbeiter*innen. Durch die genaue Standortbestimmung können Kolleg*innen schnell und einfach gefunden werden. Dies spart Zeit und sorgt für eine reibungslose Zusammenarbeit.</p>
-                    <h4 class="center">Optimierte Arbeitsabläufe:</h4>
-                    <p class="center">Die klare Übersicht über die Standorte der Mitarbeiter*innen erleichtert die Planung und Organisation von Arbeitsabläufen. Durch das Ortungssystem können Aufgaben gezielt verteilt und koordiniert werden. Dies führt zu einer höheren Effizienz und Produktivität im Unternehmen.</p>
+                    <p id="keydownText">Tippe hier etwas in das Feld: </p>
+                    <input type="text" id="inputField" placeholder="Text hier eingeben...">
                 </div>
-                <a href="technologie.html" class="center">Mehr &uuml;ber unsere Technologie erfahren &gt;</a>
             </div>
         </section>
 
         <div class="box-divider"></div>
+
+        <section class="background-light">
+            <div class="grid-container grid-1-1-1-1">
+                <a href="index.html">Home &gt;</a>
+                <a href="team.html">Unser Team &gt;</a>
+                <a href="standort.html">Standorte &gt;</a>
+                <a href="technologie.html">Technologie &gt;</a>
+            </div>
+        </section>
+
     </div>
 
 </body>
+</html>
